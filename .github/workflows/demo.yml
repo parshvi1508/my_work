@@ -1,0 +1,14 @@
+name: GitHub Actions Demo
+run-name: Testing GitHub Actions with email step
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 24f1001723@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+      - run: echo "🍏 This job's status is ${{ job.status }}."
